@@ -18,7 +18,7 @@ def home():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    data_set = pd.read_csv("C:/Users/Admin/Documents/datasets_12603_17232_Life Expectancy Data.csv")
+    data_set = pd.read_csv("341644")
     y = data_set.pop("Life expectancy ")
     # Handling the categoricals inputed
     independent_set = [i for i in request.form.values()]
